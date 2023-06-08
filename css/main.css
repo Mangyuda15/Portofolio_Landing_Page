@@ -1,0 +1,129 @@
+
+/* Google Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Variabels  */
+:root {
+  --dark-color: #0f0f0f;
+  --gray-color: gray;
+
+  --h1-font-size: 40px;
+  --h2-font-size: 32px;
+  --h3-font-size: 25px;
+  --small-font-size: 14px;
+}
+
+/* Reseet CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: antiquewhite;
+  width: 100%;
+  height: auto;
+  background-image: url("../img/body123.jpg") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Global CSS */
+section {
+  padding: 70px 0;
+}
+
+section .section-title {
+  font-size: var(--h2-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-orange {
+  background-color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.fs-7 {
+  font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+/* CSS Per Section */
+
+/* Awal Navbar */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+  color: var(--primary-color);
+}
+/* Akhir Navbar */
+
+/* Awal Header  */
+.header-section {
+  margin-top: 50px;
+}
+.header-section .container h2 {
+  font-size: var(--h3-font-size);
+  color: aliceblue;
+}
+.header-section .container h1 {
+  font-size: var(--h2-font-size);
+  color: antiquewhite;
+}
+.header-section .header-title {
+  font-size: var(--h1-font-size);
+  color: black;
+}
+.header-section .header-img {
+  width: 70%;
+}
+/* Akhir Header */
+
+/* Awal About Me */
+.about {
+  margin-top: 90px;
+  font-weight: 400;
+}
+.about .container h5 {
+  display: flex;
+  font-size: 16px;
+  font-weight: 200;
+}
+.about .container h1 {
+  font-size: var(--h1-font-size);
+}
+/* Akhir About Me */
+
+/* Awal Project */
+.project {
+  font-weight: 400;
+  margin-top: 30px;
+}
+/* Akhir Project */
+
+/* Awal Kontak  */
+.contact {
+  margin-top: 25px;
+  font-weight: 300;
+}
+/* Akhir Kontak */
