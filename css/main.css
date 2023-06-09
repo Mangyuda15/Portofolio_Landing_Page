@@ -24,17 +24,14 @@
 
 body {
   color: antiquewhite;
-  width: 100%;
-  height: auto;
   background-image: url("../img/body123.jpg") !important;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-img {
-  max-width: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 
 a {
@@ -76,6 +73,10 @@ section .section-title {
 /* CSS Per Section */
 
 /* Awal Navbar */
+.navbar {
+  background-color: black;
+  color: white;
+}
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link.active {
   color: var(--primary-color);
@@ -129,5 +130,77 @@ section .section-title {
 .contact {
   margin-top: 25px;
   font-weight: 300;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
 }
 /* Akhir Kontak */
+
+/* Awal Footer */
+.footer {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.footer h1 {
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* Akhir Footer */
+
+/* Mengatur Responsive */
+@media screen and (max-width: 768px) {
+  /* Gaya CSS yang akan diterapkan ketika lebar layar maksimum 768px */
+  body {
+    width: 90%;
+    height: auto;
+    overflow-x: hidden;
+  }
+  .header-section .container h2 {
+    color: gold;
+  }
+  .header-section .container h1 {
+    font-weight: bold;
+  }
+  .header-section .header-img {
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 250px;
+  }
+  .contact {
+    background-color: black;
+  }
+  .footer {
+    background-color: black;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Gaya CSS yang akan diterapkan ketika lebar layar maksimum 480px */
+  body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+  .header-section .container h2 {
+    color: darkorange;
+  }
+  .header-section .container h1 {
+    font-weight: bold;
+    color: blue;
+  }
+  .header-section .header-img {
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 200px;
+  }
+  .contact {
+    background-color: white;
+    color: black;
+  }
+  .footer {
+    background-color: black;
+  }
+}
